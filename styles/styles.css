@@ -28,19 +28,27 @@
     --color-grey: #444444;
     --color-yellow: #FFE17F;
     --color-bright-white: #ffffff;
+    --box-width: 1160px;
 }
 
-body,
-.text-email,
-.free-text,
-.footer-text,
-.select-control {
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+
     font-family: "Rubik", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 30px;
     color: var(--color-black);
+
+    background-color: var(--color-bright-white);
 }
 
 a {
@@ -53,6 +61,432 @@ a {
     padding: 0;
     list-style-type: none;
 }
+
+/* Для скрытия элементов */
+.visually-hidden {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+
+    white-space: nowrap;
+
+    border: 0;
+
+    clip: rect(0 0 0 0);
+    clip-path: inset(100%);
+}
+
+/*header весь*/
+.header-box {
+    max-width: var(--box-width);
+    margin: 0 auto;
+    background: var(--color-bright-white);
+}
+
+/* nav header */
+.header-navigation-box {
+    width: var(--box-width);
+    height: 300px;
+    background: var(--color-yellow);
+    margin-top: 60px;
+}
+
+.main-navigation {
+    margin-left: 60px;
+    padding: 0;
+}
+
+.logo {
+    margin-top: -20px;
+}
+
+.nav-form {
+    display: flex;
+    width: 1040px;
+    margin-bottom: 30px;
+}
+
+.navigation-search {
+    width: 517px;
+    height: 40px;
+}
+
+.group-menu-list-box {
+    width: 1040px;
+    height: 50px;
+}
+
+.user-menu-list {
+    display: flex;
+    margin-left: auto;
+}
+
+.group-menu-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* слайдер */
+.slider-list-device {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -150px;
+    padding: 0;
+}
+
+/* левый слайдер */
+.presentation-device {
+    display: flex;
+}
+
+.rarrow-icon {
+    margin-top: 211px;
+}
+
+/* правый слайдер */
+.right-slider-device {
+    width: 560px;
+    height: 401px;
+    margin-left: auto;
+}
+
+.slider-number {
+    text-align: right;
+    margin-top: 79px;
+    padding: 0;
+}
+
+.slider-text {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 50px;
+    margin-top: -140px;
+}
+
+.slider-description {
+    margin-top: -29px;
+}
+
+.detail-device {
+    margin-top: 51px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+.tab-box {
+    margin-top: 49px;
+    width: 307px;
+    height: 72px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* main */
+.main-container {
+    flex-grow: 1;
+}
+
+.catalog-categories-list {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+    padding: 0;
+    text-align: center;
+}
+
+.page-container {
+    width: var(--box-width);
+    margin: 0px auto;
+}
+
+.catalog-categories-item {
+    width: 160px;
+    height: 253px;
+}
+
+.vr-img {
+    margin: 53px 32px;
+}
+
+.monopod-img {
+    margin: 43px 37px 0px 37px;
+}
+
+.camera-img {
+    margin: 37px 45px;
+}
+
+.bracelet-img {
+    margin: 47px 26px;
+}
+
+.clock-img {
+    margin: 32px 52px;
+}
+
+.copter-img {
+    margin: 46px 14px;
+}
+
+/* блок доставки гарантия кредит delivery*/
+.delivery-menu-container {
+    width: var(--box-width);
+    display: flex;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.delivery-menu-list-first {
+    width: 280px;
+    padding: 64px 0px 65px 0px;
+
+}
+
+.delivery-menu-item {
+    display: flex;
+}
+
+/* доставка редких товаров */
+.on-order-box {
+    width: var(--box-width);
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+    padding: 0;
+}
+
+.logo-on-order {
+    width: 125px;
+    height: 100px;
+    background: var(--color-yellow);
+}
+
+.logo-on-order img {
+    margin: 34px 39px;
+}
+
+.on-order-text {
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+}
+
+.more-info-link {
+    width: 125px;
+    height: 100px;
+}
+
+.more-info-link img {
+    margin: 30px 42.5px;
+}
+
+/* О нас и контакты */
+.about-us-box {
+    width: var(--box-width);
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+
+}
+
+.about-us {
+    width: 520px;
+    margin-right: 108px;
+
+}
+
+/* подпишись */
+.footer-subscribe {
+    background-color: var(--color-white);
+}
+
+.footer-subscribe-box {
+    max-width: var(--box-width);
+    margin: 0 auto;
+}
+
+.subscribe-caption-box {
+    display: flex;
+    padding: 0;
+}
+
+.subscribe-caption-box h2 {
+    margin-top: 64px;
+}
+
+.subscribe-caption-box p {
+    max-width: 560px;
+    margin-top: 74px;
+}
+
+.subscribe-box-form {
+    max-width: var(--box-width);
+    display: flex;
+
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+.text-email {
+    width: 557px;
+    height: 55px;
+    margin: 0;
+    padding: 0;
+}
+
+.newsletter-button {
+    width: 253px;
+    height: 57px;
+    margin: 0;
+    padding: 0;
+}
+
+/* footer footer */
+.footer {
+    background: var(--color-grey);
+}
+
+.footer-box {
+    width: var(--box-width);
+    height: 321px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0;
+}
+
+.logo-footer-box {
+    width: 239px;
+    height: 182px;
+    margin-top: 62px;
+}
+
+.footer-text {
+    font-family: 'Rubik';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.footer-list-box {
+    width: 444px;
+    height: 123px;
+    margin-top: 137px;
+}
+
+.footer-list {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 62px;
+}
+
+.footer-social-list {
+    margin: 0 auto;
+
+    display: flex;
+    width: 150px;
+    height: 40px;
+}
+
+.footer-social-item {
+    margin: 0 auto;
+    border-radius: 30%;
+}
+
+.contacts {
+    margin: 0 auto;
+    width: 175px;
+    height: 116px;
+    margin-top: 140px;
+}
+
+.html-academy-img {
+    margin-top: 30px;
+}
+
+/* каталог main */
+.main-box {
+    width: var(--box-width);
+    margin: 0 auto;
+}
+
+.inner-header-title {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 50px;
+
+    margin-top: 35px;
+    margin-bottom: 13px;
+    margin-left: 60px;
+    margin-right: auto;
+    padding: 0;
+}
+
+.breadcrumbs {
+    display: flex;
+    width: 429px;
+    height: 19px;
+    justify-content: space-between;
+    margin-left: 60px;
+    padding: 0;
+}
+
+/* блоки фильтра сортировки и контента */
+.content-filter-box {
+    display: flex;
+}
+
+/* блок фильтр */
+.filter {
+    width: 320px;
+    margin-right: 40px;
+}
+
+/* блок контента и сортировки */
+.contetn-box {
+    width: 840px;
+}
+
+/* сортировка */
+.catalog-filter {}
+
+/* контент */
+.product-card-menu {}
+
+/* цвет */
+.logo-on-order,
+.catalog-categories-link,
+.visual-hidden-catalog {
+    background: var(--color-yellow);
+}
+
+/* шрифты */
+.text-email,
+.free-text,
+.select-control {
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: var(--color-black);
+}
+
+
 
 .pagination-current,
 .contacts-phone-one,
@@ -87,15 +521,13 @@ a {
     font-weight: 700;
     font-size: 180px;
     line-height: 30px;
-    /*color: #FFFFFF;*/
+    color: #FFFFFF;
 }
 
-.inner-header-title,
 .subscribe-caption,
 h2.text-menu,
 .about-us-caption,
-.contacts-caption,
-.slider-text {
+.contacts-caption {
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
     font-size: 50px;
@@ -182,12 +614,6 @@ h2.text-menu,
     text-transform: uppercase;
 }
 
-.logo-on-order,
-.catalog-categories-link,
-.visual-hidden-catalog,
-.main-header {
-    background: var(--color-yellow);
-}
 
 .footer-social-item {
     background: rgba(255, 255, 255, 0.3);
@@ -197,12 +623,8 @@ h2.text-menu,
 .filter,
 .footer-social-list .subscribe,
 .on-order-box,
-.delivery-menu-list {
+.delivery-menu {
     background: var(--color-white);
-}
-
-.page-footer {
-    background: var(--color-grey);
 }
 
 .free-text,
