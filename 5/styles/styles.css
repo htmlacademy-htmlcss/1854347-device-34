@@ -56,15 +56,10 @@ a {
     color: var(--color-black);
 }
 
-ul {
+.reset-list {
     margin: 0;
     padding: 0;
     list-style-type: none;
-}
-
-li {
-    margin: 0;
-    padding: 0;
 }
 
 /* Для скрытия элементов */
@@ -222,7 +217,7 @@ li {
 }
 
 .vr-img {
-    margin: 52.5px 31.5px;
+    margin: 53px 32px;
 }
 
 .monopod-img {
@@ -230,11 +225,11 @@ li {
 }
 
 .camera-img {
-    margin: 36.5px 44.5px;
+    margin: 37px 45px;
 }
 
 .bracelet-img {
-    margin: 47px 26.3px;
+    margin: 47px 26px;
 }
 
 .clock-img {
@@ -242,7 +237,7 @@ li {
 }
 
 .copter-img {
-    margin: 45.5px 14px;
+    margin: 46px 14px;
 }
 
 /* блок доставки гарантия кредит delivery*/
@@ -279,11 +274,11 @@ li {
 }
 
 .logo-on-order img {
-    margin: 34.5px 39px;
+    margin: 34px 39px;
 }
 
 .on-order-text {
-    margin: 40 auto;
+    margin: 0 auto;
     padding: 0;
     text-align: center;
 }
