@@ -24,10 +24,18 @@
 
 :root {
     --color-black: #000000;
-    --color-white: #F0F0F0;
+    --color-white: #dcdcdc;
+    --color-grey-white:#cccccc;
     --color-grey: #444444;
     --color-yellow: #FFE17F;
     --color-bright-white: #ffffff;
+    --color-pink: #af4fff;
+    --color-red: #ff3d3d;
+    --rgba-grey-red: rgba(68, 68, 68, 0.3);
+    --rgba-light-grey: rgba(240, 240, 240, 0.8);
+    --rgba-midlle-grey: rgba(220, 220, 220, 0.5);
+    --rgba-black: rgba(0, 0, 0, 0.3);
+    --rgba-sand: rgba(255, 225, 127, 0.5);
     --box-width: 1160px;
 }
 
@@ -40,7 +48,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100%;
-    font-family: "Rubik", sans-serif;
+    font-family: 'Rubik', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -130,12 +138,11 @@ a {
 .navigation-link {
     display: block;
     padding: 5px 5px;
-    font-family: 'Rubik';
+    font-family: 'Rubik', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 30px;
-
 }
 
 /* блок каталога допинфо */
@@ -157,7 +164,7 @@ a {
 .menu-navigation-link {
     display: block;
     padding-top: 15px;
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 18px;
@@ -173,7 +180,7 @@ a {
 .menu-catalog-link {
     width: 236px;
     margin-right: 7px;
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 18px;
@@ -208,7 +215,7 @@ a {
     margin-top: -150px;
 }
 
-.rarrow-icon {
+.arrow-icon {
     margin-top: 250px;
 }
 
@@ -220,7 +227,7 @@ a {
 }
 
 .details-dest {
-    font-family: 'Rubik';
+    font-family: 'Rubik', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 36px;
@@ -228,7 +235,7 @@ a {
 }
 
 .details-fly {
-    font-family: 'Rubik';
+    font-family: 'Rubik', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -236,19 +243,18 @@ a {
 }
 
 /* второй слайдер */
-
 .slider-number {
     font-weight: 700;
     font-size: 180px;
     line-height: 30px;
-    color: #FFFFFF;
+    color: var(--color-bright-white);
     text-align: right;
     margin-top: -77px;
     margin-right: 55px;
 }
 
 .slider-text {
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 50px;
@@ -268,7 +274,7 @@ a {
     width: 220px;
     display: block;
     margin-top: 51px;
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 18px;
@@ -301,7 +307,7 @@ a {
     margin: 0;
     padding: 0;
     background: none;
-    border: 2px solid #ffffff;
+    border: 2px solid var(--color-bright-white);
 }
 
 .slider-pagination-button::after {
@@ -310,16 +316,15 @@ a {
     box-sizing: border-box;
     width: 12px;
     height: 12px;
-    border: 2px solid #000000;
+    border: 2px solid var(--color-black);
     border-radius: 50%;
 }
 
 .slider-pagination-button-active::after {
-    background-color: #000000;
+    background-color: var(--color-black);
 }
 
 /* конец чекбоксы */
-
 .tab-box {
     margin-top: 49px;
     width: 307px;
@@ -381,10 +386,8 @@ a {
 
 .main-advantages-wrapper {
     position: relative;
-
     min-height: max-content;
     overflow: hidden;
-
 }
 
 .main-advantages-wrapper::after {
@@ -392,11 +395,9 @@ a {
     position: absolute;
     top: 102px;
     z-index: -2;
-
     width: 100%;
     height: 100%;
-
-    background-color: #f0f0f0;
+    background-color: var(--color-white);
 }
 
 .main-advantages {
@@ -407,14 +408,10 @@ a {
 
 .main-advantages-links {
     width: 280px;
-    margin: 0 116px 0 0;
-    padding: 0;
+    margin-right:116px;
     padding-top: 73px;
     padding-bottom: 17px;
-
-    list-style: none;
-
-    border-right: 7px solid #000000;
+    border-right: 7px solid var(--color-black);
 }
 
 .main-advantages-link {
@@ -425,22 +422,19 @@ a {
 
 .button-active {
     position: relative;
-
     display: block;
     height: 20px;
     margin-left: 5px;
-
-    font-family: Raleway, sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 18px;
     line-height: 21px;
     font-weight: 800;
     text-align: center;
-    color: #ffe17f;
+    color: var(--color-yellow);
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 0.2em;
-
-    background-color: #000000;
+    background-color: var(--color-black);
 }
 
 .button-active::before {
@@ -449,12 +443,10 @@ a {
     top: -10px;
     left: -5px;
     z-index: -1;
-
     display: block;
     width: 280px;
     height: 40px;
-
-    background-color: #000000;
+    background-color: var(--color-black);
 }
 
 .button-active::after {
@@ -463,37 +455,27 @@ a {
     top: -10px;
     left: -5px;
     z-index: 1;
-
     display: block;
     width: 280px;
     height: 40px;
 }
 
 .button-active:hover {
-    color: rgba(255, 225, 127, 0.5);
-}
-
-.button-active:focus {
-    outline: none;
+    color: var(--rgba-sand);
 }
 
 .button-active:focus::after {
-    outline: 2px solid #af4fff;
+    outline: 2px solid var(--color-pink);
     outline-offset: 2px;
-
 }
 
 .main-advantages-list {
     max-width: 748px;
-    margin: 0;
-    padding: 73px 0 0 0;
-
-    list-style: none;
+    padding-top: 73px;
 }
 
 .main-advantages-item {
     position: relative;
-
     display: none;
 }
 
@@ -501,19 +483,15 @@ a {
     content: "";
     position: absolute;
     top: 0;
-
     display: block;
-
     background-repeat: no-repeat;
 }
 
 .advantages-delivery::after {
     top: 4px;
     left: 558px;
-
     width: 135px;
     height: 165px;
-
     background-image: url(../images/deliveryman.png);
 }
 
@@ -523,8 +501,7 @@ a {
 
 .main-advantages-title {
     margin: 0 0 33px 0;
-
-    font-family: Raleway, sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 50px;
     line-height: 50px;
     font-weight: 800;
@@ -533,8 +510,7 @@ a {
 .main-advantages-text {
     width: 475px;
     margin: 0;
-
-    color: #444444;
+    color: var(--color-grey);
 }
 
 /* Доставка */
@@ -546,24 +522,21 @@ a {
 
 .delivery-link {
     position: relative;
-
     display: block;
     min-width: 820px;
     max-width: 1160px;
     height: 100px;
-
-    font-family: Raleway, sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 20px;
     line-height: 23px;
     font-weight: 800;
     text-align: center;
-    color: #000000;
+    color: var(--color-black);
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 0.2em;
     white-space: nowrap;
-
-    background-color: #f0f0f0;
+    background-color: var(--color-white);
 }
 
 .delivery-text-wrapper {
@@ -576,11 +549,9 @@ a {
     content: "";
     position: absolute;
     left: 0;
-
     width: 125px;
     height: 100px;
-
-    background-color: #ffe17f;
+    background-color: var(--color-yellow);
     background-image: url("../images/delivery-car.svg");
     background-repeat: no-repeat;
     background-position: center;
@@ -591,29 +562,26 @@ a {
     position: absolute;
     top: 30px;
     right: 43px;
-
     width: 40px;
     height: 40px;
-
     line-height: 40px;
-    color: rgba(0, 0, 0, 0.3);
+    color: var(--rgba-black);
     text-transform: none;
     letter-spacing: normal;
-
-    background-color: rgba(220, 220, 220, 0.5);
+    background-color: var(--rgba-midlle-grey);
     border-radius: 50%;
 }
 
 .delivery-link:hover::before {
-    background-color: #ffc700;
+    background-color: var(--color-yellow);
 }
 
 .delivery-link:hover::after {
-    color: #000000;
+    color: var(--color-black);
 }
 
 .delivery-link:focus {
-    outline: 2px solid #af4fff;
+    outline: 2px solid var(--color-pink);
     outline-offset: 2px;
 }
 
@@ -632,8 +600,7 @@ a {
 
 .about-us-title {
     margin: 0 0 47px;
-
-    font-family: Raleway, sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 50px;
     line-height: 50px;
     font-weight: 800;
@@ -641,31 +608,28 @@ a {
 
 .about-us-title::before {
     content: "";
-
     display: block;
     width: 84px;
     height: 7px;
     margin-bottom: 41px;
-
-    background-color: #000000;
+    background-color: var(--color-black);
 }
 
 .about-us-text {
     width: 497px;
     margin: 0 0 30px;
-
-    color: #444444;
+    color: var(--color-grey);
 }
 
 .about-us-delivery-list {
-    margin: 0 0 40px;
+    margin-bottom: 40px;
     padding-left: 20px;
+    list-style-type: disc;
 }
 
 .about-us-delivery-item {
     margin-bottom: 19px;
     padding-left: 15px;
-
     line-height: 20px;
     font-weight: 700;
     letter-spacing: -0.02em;
@@ -676,7 +640,7 @@ a {
 }
 
 .about-us-delivery-item::marker {
-    color: #ffc700;
+    color: var(--color-yellow);
 }
 
 .about-us-link {
@@ -690,8 +654,7 @@ a {
 
 .contacts-title {
     margin: 0 0 48px 0;
-
-    font-family: Raleway, sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 50px;
     line-height: 50px;
     font-weight: 800;
@@ -699,35 +662,30 @@ a {
 
 .contacts-title::before {
     content: "";
-
     display: block;
     width: 84px;
     height: 7px;
     margin-bottom: 41px;
-
-    background-color: #000000;
+    background-color: var(--color-black);
 }
 
 .contacts-text {
     width: 498px;
     margin: 0 0 30px;
-
-    color: #444444;
+    color: var(--color-grey);
 }
 
 .contacts-subtitle {
     margin: 0 0 15px;
-
     font-size: 24px;
     font-weight: 700;
-    color: #444444;
+    color: var(--color-grey);
 }
 
 .contacts-address {
     margin-bottom: 30px;
-
     font-style: normal;
-    color: #444444;
+    color: var(--color-grey);
 }
 
 .contacts-address-text {
@@ -739,15 +697,12 @@ a {
 }
 
 .contacts-phone:focus {
-    outline: 2px solid #af4fff;
+    outline: 2px solid var(--color-pink);
 }
 
 .contacts-schedule {
-    margin: 0 0 40px;
-    padding: 0;
-
-    color: #444444;
-    list-style: none;
+    margin-bottom:40px;
+    color: var(--color-grey);
 }
 
 .link-contact-us {
@@ -756,7 +711,7 @@ a {
 
 /* Подписка на рассылку */
 .mailing {
-    background-color: #f0f0f0;
+    background-color: var(--color-white);
 }
 
 .mailing-text-wrapper {
@@ -771,8 +726,7 @@ a {
     margin: 0;
     padding-top: 64px;
     padding-left: 8px;
-
-    font-family: Raleway, sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 50px;
     line-height: 50px;
     font-weight: 800;
@@ -782,8 +736,7 @@ a {
     width: 553px;
     margin: 0;
     padding-top: 73px;
-
-    color: #444444;
+    color: var(--color-grey);
 }
 
 .mailing-form-wrapper {
@@ -801,49 +754,43 @@ a {
 .mailing-input {
     position: relative;
     z-index: 1;
-
     flex-grow: 1;
     width: 540px;
     height: 54px;
     margin: 0;
     padding: 0;
     padding-left: 17px;
-
-    font-family: Rubik, sans-serif;
+    font-family: 'Rubik', sans-serif;
     font-size: 18px;
     line-height: 30px;
-    color: #444444;
-
+    color: var(--color-grey);
     background-color: inherit;
     border: none;
-    border-bottom: 3px solid #c4c4c4;
+    border-bottom: 3px solid var(--color-white);
 }
 
 .mailing-input:focus {
-    background-color: #dcdcdc;
+    background-color: var(--color-white);
     outline: none;
 }
 
 .mailing-input:invalid {
-    border-color: #ff3d3d;
+    border-color: var(--color-red);
 }
 
 .mailing-button {
     position: relative;
-
     display: inline-block;
     width: 253px;
     height: 57px;
     padding-left: 12px;
-
-    font-family: Raleway, sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 18px;
     line-height: 21px;
     font-weight: 800;
     text-transform: uppercase;
     letter-spacing: 0.2em;
-
-    border: 3px solid #cecece;
+    border: 3px solid var(--color-white);
     cursor: pointer;
 }
 
@@ -853,16 +800,14 @@ a {
     top: -5px;
     left: -5px;
     z-index: 2;
-
     width: 257px;
     height: 61px;
 }
 
 .mailing-button:hover {
-    color: #ffffff;
-
-    background-color: #000000;
-    border-color: #000000;
+    color: var(--color-bright-white);
+    background-color: var(--color-black);
+    border-color: var(--color-black);
 }
 
 .mailing-button:focus {
@@ -870,16 +815,14 @@ a {
 }
 
 .mailing-button:focus::before {
-    outline: 2px solid #af4fff;
+    outline: 2px solid var(--color-pink);
 }
 
 .its-free {
     position: relative;
-
     display: block;
     width: 160px;
     padding: 13px 2px 0 0;
-
     text-align: right;
 }
 
@@ -887,20 +830,17 @@ a {
     content: "";
     position: absolute;
     top: 27px;
-
     display: block;
     width: 16px;
     height: 16px;
-
     background-image: url("../images/mailing-its-free.svg");
     transform: translateY(-50%);
 }
 
 /* Футер */
 .page-footer {
-    color: #ffffff;
-
-    background-color: #444444;
+    color: var(--color-bright-white);
+    background-color: var(--color-grey);
 }
 
 .footer-wrapper {
@@ -925,7 +865,7 @@ a {
 }
 
 .footer-logo-link:focus {
-    outline: 2px solid #af4fff;
+    outline: 2px solid var(--color-pink);
 }
 
 .footer-address-block {
@@ -934,7 +874,6 @@ a {
 
 .footer-address-text {
     margin: 0;
-
     font-style: normal;
     font-size: 16px;
     line-height: 20px;
@@ -943,13 +882,11 @@ a {
 
 .footer-address-text::after {
     content: "";
-
     display: block;
     width: 80px;
     height: 7px;
     margin-top: 66px;
-
-    background-color: #ffc700;
+    background-color: var(--color-yellow);
 }
 
 /* Преимущества */
@@ -966,10 +903,6 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 0;
-    padding: 0;
-
-    list-style: none;
 }
 
 .footer-advantages-item:not(:last-child) {
@@ -977,7 +910,7 @@ a {
 }
 
 .footer-advantages-link {
-    font-family: Raleway, sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 18px;
     line-height: 21px;
     font-weight: 800;
@@ -989,14 +922,12 @@ a {
 
 .footer-advantages-link:hover {
     padding-bottom: 4px;
-
-    color: #ffc700;
-
-    border-bottom: 2px solid #ffc700;
+    color: var(--color-yellow);
+    border-bottom: 2px solid var(--color-yellow);
 }
 
 .footer-advantages-link:focus {
-    outline: 2px solid #af4fff;
+    outline: 2px solid var(--color-pink);
 }
 
 /* Телефон */
@@ -1018,11 +949,11 @@ a {
 }
 
 .footer-phone-text:hover {
-    color: #ffc700;
+    color: var(--color-yellow);
 }
 
 .footer-phone-text:focus {
-    outline: 2px solid #af4fff;
+    outline: 2px solid var(--color-pink);
 }
 
 .htmlacademy-link {
@@ -1031,11 +962,11 @@ a {
 }
 
 .htmlacademy-link:hover .htmlacademy-logo>path {
-    fill: #ffffff;
+    fill: var(--color-bright-white);
 }
 
 .htmlacademy-link:focus {
-    outline: 2px solid #af4fff;
+    outline: 2px solid var(--color-pink);
 }
 
 /* Социальные сети */
@@ -1048,10 +979,6 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 0;
-    padding: 0;
-
-    list-style: none;
 }
 
 .footer-social-item:not(:last-child) {
@@ -1065,12 +992,12 @@ a {
 }
 
 .social-button:hover .social-image circle {
-    fill: #ffc700;
+    fill: var(--color-yellow);
     fill-opacity: 1;
 }
 
 .social-button:focus {
-    outline: 2px solid #af4fff;
+    outline: 2px solid var(--color-pink);
 }
 
 /* catalog.html */
@@ -1089,36 +1016,27 @@ a {
 /* Заголовок */
 .inner-header-title {
     margin: 0 0 14px;
-
-    font-family: Raleway, sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 50px;
     line-height: 50px;
     font-weight: 800;
 }
 
-/* Хлебные крошки */
+
 .breadcrumbs {
     display: flex;
-    margin: 0 0 35px;
-    padding: 0;
-
+    margin-bottom: 35px;
     line-height: 19px;
     list-style: url("../images/breadcrumbs-arrow.svg");
 }
 
 .breadcrumbs-item {
-    margin: 0 30px 0 0;
+    margin-right: 30px;
     padding-left: 8px;
 }
 
 .breadcrumbs-item:first-of-type {
-    padding-left: 0;
-
     list-style: none;
-}
-
-.breadcrumbs-item:last-of-type {
-    margin: 0;
 }
 
 .breadcrumbs-link {
@@ -1133,7 +1051,7 @@ a {
 }
 
 .breadcrumbs-link:focus {
-    outline: 2px solid #af4fff;
+    outline: 2px solid var(--color-pink);
 }
 
 /* Фильтры */
@@ -1144,7 +1062,7 @@ a {
 }
 
 .catalog-products {
-    background-color: #f0f0f0;
+    background-color: var(--color-white);
 }
 
 .filter-wrapper {
@@ -1155,8 +1073,7 @@ a {
 
 .filter-text {
     margin: 0 0 58px;
-
-    font-family: Raleway, sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 16px;
     line-height: 19px;
     font-weight: 800;
@@ -1167,7 +1084,6 @@ a {
 .catalog-filter-group {
     margin: 0 60px 35px 0;
     padding: 0;
-
     border: none;
 }
 
@@ -1175,46 +1091,37 @@ a {
     width: 100%;
     margin-bottom: 20px;
     padding: 12px 0 0;
-
     line-height: 20px;
     font-weight: 700;
     letter-spacing: -0.02em;
-
-    border-top: 2px solid #000000;
+    border-top: 2px solid var(--color-black);
 }
 
 .range {
     position: relative;
-
     margin-bottom: 31px;
     padding-top: 8px;
 }
 
 .range-scale {
     position: relative;
-
     height: 2px;
     margin-bottom: 15px;
-
-    background-color: #dcdcdc;
+    background-color: var(--color-white);
 }
 
 .range-bar {
     position: absolute;
-
     height: 2px;
-
-    background-color: #000000;
+    background-color: var(--color-black);
 }
 
 .range-toggle {
     position: absolute;
-
     width: 18px;
     height: 18px;
-
-    background: #ebebeb;
-    border: 2px solid #000000;
+    background: var(--color-white);
+    border: 2px solid var(--color-black);
     border-radius: 50%;
     cursor: pointer;
 }
@@ -1224,14 +1131,13 @@ a {
     position: absolute;
     top: -2px;
     left: -2px;
-
     display: block;
     width: 18px;
     height: 18px;
 }
 
 .range-toggle:hover {
-    background-color: #dcdcdc;
+    background-color: var(--color-white);
 }
 
 .range-toggle:focus {
@@ -1239,7 +1145,7 @@ a {
 }
 
 .range-toggle:focus::before {
-    outline: 2px solid #af4fff;
+    outline: 2px solid var(--color-pink);
     outline-offset: 2px;
 }
 
@@ -1256,14 +1162,11 @@ a {
 .range-wrapper-inputs {
     position: absolute;
     left: -15px;
-
     display: flex;
     justify-content: space-between;
     width: 240px;
-
     font-size: 15px;
     line-height: 18px;
-
     opacity: 0.3;
 }
 
@@ -1274,9 +1177,7 @@ a {
 .range-input {
     width: 30px;
     padding: 0 4px;
-
     font: inherit;
-
     background-color: transparent;
     border: none;
     appearance: textfield;
@@ -1289,106 +1190,88 @@ a {
 .range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button {
     appearance: none;
-
     margin: 0;
-}
-
-.catalog-filter-list {
-    margin: 0;
-    padding: 0;
-
     list-style: none;
 }
 
 .catalog-filter-item:not(:last-child) {
-    margin-bottom: 18px;
+  margin-bottom: 18px;
 }
 
 .filter-control {
-    position: relative;
-
-    display: block;
-    padding-left: 36px;
-
-    font-size: 16px;
-    line-height: 19px;
+  position: relative;
+  display: block;
+  padding-left: 36px;
+  font-size: 16px;
+  line-height: 19px;
 }
 
 .filter-control:hover {
-    opacity: 0.6;
+  opacity: 0.6;
 }
 
 .control-mark {
-    position: absolute;
-    top: -1px;
-    left: 0;
-
-    box-sizing: border-box;
-    width: 20px;
-    height: 20px;
-
-    border: 2px solid #cccccc;
-    border-radius: 3px;
+  position: absolute;
+  top: -1px;
+  left: 0;
+  box-sizing: border-box;
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--color-grey-white);
+  border-radius: 3px;
 }
 
-.filter-input:disabled~span {
-    opacity: 0.1;
+.filter-input:disabled ~ span {
+  opacity: 0.1;
 }
 
-.filter-input:checked+.control-mark {
-    border-color: #000000;
+.filter-input:checked + .control-mark {
+  border-color: var(--color-black);
 }
 
-.filter-input[type="checkbox"]:checked+.control-mark::before {
-    content: "";
-    position: absolute;
-    top: 3px;
-    left: 3px;
-
-    width: 10px;
-    height: 10px;
-
-    background-image: url(../images/checkbox.svg);
+.filter-input[type="checkbox"]:checked + .control-mark::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 10px;
+  height: 10px;
+  background-image: url(../images/checkbox.svg);
 }
 
-.filter-input[type="radio"]+.control-mark {
-    border-radius: 50%;
+.filter-input[type="radio"] + .control-mark {
+  border-radius: 50%;
 }
 
-.filter-input[type="radio"]:checked+.control-mark::before {
-    content: "";
-    position: absolute;
-    top: 4px;
-    left: 4px;
-
-    width: 8px;
-    height: 8px;
-
-    background-color: #000000;
-    border-radius: 50%;
+.filter-input[type="radio"]:checked + .control-mark::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 8px;
+  height: 8px;
+  background-color: var(--color-black);
+  border-radius: 50%;
 }
 
-.filter-input:focus+.control-mark::after {
-    content: "";
-    position: absolute;
-    top: -2px;
-    left: -2px;
-
-    width: 20px;
-    height: 20px;
-
-    outline: 2px solid #af4fff;
-    outline-offset: 2px;
+.filter-input:focus + .control-mark::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: 20px;
+  height: 20px;
+  outline: 2px solid var(--color-pink);
+  outline-offset: 2px;
 }
 
 .filter-button-wrapper {
-    padding: 13px 0 0 7px;
+  padding: 13px 0 0 7px;
 }
 
 .catalog-filter-button {
-    width: 210px;
-
-    border: none;
+  width: 210px;
+  border: none;
 }
 
 .catalog-products-wrapper {
@@ -1407,11 +1290,9 @@ a {
 .select-control {
     margin: auto 203px auto auto;
     padding-right: 27px;
-
-    font-family: Rubik, sans-serif;
+    font-family: 'Rubik', sans-serif;
     font-size: 18px;
     line-height: 30px;
-
     background-color: inherit;
     border: none;
     cursor: pointer;
@@ -1422,7 +1303,7 @@ a {
 }
 
 .select-control:focus {
-    outline: 2px solid #af4fff;
+    outline: 2px solid var(--color-pink);
 }
 
 .arrow-button-wrapper {
@@ -1430,14 +1311,13 @@ a {
 }
 
 .arrow-button-wrapper:focus-within {
-    outline: 2px solid #af4fff;
+    outline: 2px solid var(--color-pink);
 }
 
 .catalog-arrow-button {
     display: block;
     width: 30px;
     height: 30px;
-
     background-image: url(../images/catalog-button-up.svg);
     background-repeat: no-repeat;
     background-position: center;
@@ -1462,8 +1342,7 @@ a {
     box-sizing: border-box;
     width: 840px;
     padding: 70px 40px 78px;
-
-    background-color: #ffffff;
+    background-color: var(--color-bright-white);
     row-gap: 44px;
 }
 
@@ -1471,10 +1350,8 @@ a {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 44px 40px;
-
     margin: 0;
     padding: 0;
-
     list-style: none;
 }
 
@@ -1483,16 +1360,14 @@ a {
 }
 
 .product-card:focus-within {
-    outline: 2px solid #af4fff;
+    outline: 2px solid var(--color-pink);
     outline-offset: 2px;
 }
 
 .product-card-image {
     position: relative;
-
     margin-bottom: 23px;
-
-    background-color: #ffffff;
+    background-color: var(--color-bright-white);
 }
 
 .product-card-wrapper {
@@ -1502,7 +1377,6 @@ a {
 .product-card-link {
     width: 226px;
     margin-right: auto;
-
     font-size: 18px;
     line-height: 20px;
     font-weight: 700;
@@ -1517,14 +1391,13 @@ a {
 
 .product-card-title {
     margin: 0;
-
     font-size: inherit;
 }
 
 .product-card-price {
     line-height: 21px;
     font-weight: 400;
-    color: #444444;
+    color: var(--color-grey);
 }
 
 .product-card-button {
@@ -1532,7 +1405,6 @@ a {
     top: 170px;
     left: 70px;
     z-index: 3;
-
     display: none;
     width: 210px;
 }
@@ -1544,12 +1416,10 @@ a {
     top: 0;
     left: 0;
     z-index: 2;
-
     display: none;
     width: 360px;
     height: 380px;
-
-    background: rgba(240, 240, 240, 0.8);
+    background: var(--rgba-light-grey);
 }
 
 .product-card:hover::after {
@@ -1570,29 +1440,27 @@ a {
     width: 760px;
     height: 55px;
     padding: 0 0 0 4px;
-
-    font-family: Raleway, sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 16px;
     line-height: 19px;
     font-weight: 800;
     text-transform: uppercase;
     letter-spacing: 0.2em;
-
-    background-color: #ffffff;
-    border: 3px solid #e5e5e5;
+    background-color: var(--color-bright-white);
+    border: 3px solid var(--color-white);
 }
 
 .pagination-load-more:hover {
-    border-color: #000000;
+    border-color: var(--color-black);
 }
 
 .pagination-load-more:focus {
-    outline: 2px solid #af4fff;
+    outline: 2px solid var(--color-pink);
     outline-offset: 2px;
 }
 
 .pagination-load-more:disabled {
-    border-color: #e5e5e5;
+    border-color: var(--color-white);
     cursor: default;
     opacity: 0.3;
 }
@@ -1602,12 +1470,7 @@ a {
     justify-content: center;
     width: 760px;
     height: 71px;
-    margin: 0;
-    padding: 0;
-
-    list-style: none;
-
-    background-color: #ebebeb;
+    background-color: var(--color-white);
 }
 
 .pagination-item:first-child {
@@ -1623,35 +1486,31 @@ a {
     box-sizing: border-box;
     height: 71px;
     padding: 26px 23px;
-
-    font-family: Raleway, sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 18px;
     line-height: 20px;
     font-weight: 800;
     text-align: center;
-    color: #000000;
+    color: var(--color-black);
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 0.2em;
 }
 
 .pagination-disabled {
-    color: #ebebeb;
-
+    color: var(--color-white);
     cursor: default;
 }
 
 .pagination-page-number {
     position: relative;
-
     display: block;
     width: 40px;
-
     font-size: 16px;
     line-height: 71px;
     font-weight: 400;
     text-align: center;
-    color: rgba(68, 68, 68, 0.3);
+    color: var(--rgba-grey-red);
     text-decoration: none;
 }
 
@@ -1660,15 +1519,15 @@ a {
 }
 
 .pagination-link:hover {
-    background-color: #dcdcdc;
+    background-color: var(--color-white);
 }
 
 .pagination-disabled:hover {
-    background-color: #ebebeb;
+    background-color: var(--color-white);
 }
 
 .pagination-link:focus {
-    outline: 2px solid #af4fff;
+    outline: 2px solid var(--color-pink);
     outline-offset: 2px;
 }
 
@@ -1677,13 +1536,12 @@ a {
     position: absolute;
     top: 13px;
     left: -2px;
-
     width: 44px;
     height: 44px;
 }
 
 .pagination-page-number:hover {
-    color: #444444;
+    color: var(--color-grey);
 }
 
 .pagination-page-number:focus {
@@ -1691,23 +1549,21 @@ a {
 }
 
 .pagination-page-number:focus::before {
-    outline: 2px solid #af4fff;
+    outline: 2px solid var(--color-pink);
 }
 
 /* Оформление ссылок-кнопок */
 .button {
     position: relative;
     z-index: 0;
-
     display: block;
     height: 20px;
-
-    font-family: Raleway, sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 18px;
     line-height: 20px;
     font-weight: 800;
     text-align: center;
-    color: #000000;
+    color: var(--color-black);
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 0.2em;
@@ -1717,18 +1573,15 @@ a {
     content: "";
     position: absolute;
     top: 6px;
-    right: -5px;
-    left: -5px;
+    right: 0px;
+    left: 0px;
     z-index: -1;
-
     height: 8px;
-
-    background-color: #ffe17f;
+    background-color: var(--color-yellow);
 }
 
 .button:hover::before {
     top: -10px;
-
     height: 40px;
 }
 
@@ -1740,13 +1593,11 @@ a {
     content: "";
     position: absolute;
     top: -10px;
-    right: -5px;
-    left: -5px;
+    right: 0px;
+    left: 0px;
     z-index: -1;
-
     height: 40px;
-
-    border: 2px solid #af4fff;
+    border: 20px solid var(--color-pink);
 }
 
 .button:disabled {
@@ -1756,6 +1607,5 @@ a {
 
 .button:disabled::before {
     top: 6px;
-
     height: 8px;
 }

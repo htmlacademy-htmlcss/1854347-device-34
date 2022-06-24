@@ -22,7 +22,9 @@
           <div class="form-search-navigation">
             <!-- форма поиска -->
             <form class="fom-search" action="https://echo.htmlacademy.ru/courses" method="post">
-              <input type="text" class="search-text" value="Текст поиска">
+            <label for="search">
+              <input type="text" class="search-text" value="Текст поиска" index="search">
+            </label>
               <img class="search-icon" width="16" height="16" src="./images/search-icon.svg" alt="Найти">
               <button class="button-find" type="submit">Найти</button>
             </form>
@@ -108,11 +110,11 @@
               <li class="left-slider-device">
                 <div class="presentation-device">
                   <button class="left-right-arrow visually-hidden">Влево</button>
-                  <img class="rarrow-icon" width="20" height="60" src="./images/left-arrowr.svg" alt="В лево">
+                  <img class="arrow-icon" width="20" height="60" src="./images/left-arrowr.svg" alt="В лево">
                   <img class="img-device" width="560" height="560" src="./images/kvadrocopter-slider.png"
                     alt="Фото квадракоптера">
                   <button class="left-right-arrow visually-hidden">Вправо</button>
-                  <img class="rarrow-icon" width="20" height="60" src="./images/right-arrow.svg" alt="В право">
+                  <img class="arrow-icon" width="20" height="60" src="./images/right-arrow.svg" alt="В право">
                 </div>
               </li>
               <li class="right-slider-device">
@@ -224,7 +226,7 @@
       </section>
       <div class="main-advantages-wrapper">
         <section class="main-advantages">
-          <ul class="main-advantages-links">
+          <ul class="reset-list reset-list main-advantages-links">
             <li>
               <a class="button-active main-advantages-link" href="#">Доставка</a>
             </li>
@@ -236,7 +238,7 @@
             </li>
           </ul>
           <div class="line-horizontal"></div>
-          <ul class="main-advantages-list">
+          <ul class="reset-list main-advantages-list">
             <li class="main-advantages-item advantages-delivery advantages-item-active">
               <h3 class="main-advantages-title">Доставка</h3>
               <p class="main-advantages-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно
@@ -268,7 +270,7 @@
           </p>
           <p class="about-us-text">Мы можем доставить ваш товар в самые отдалённые уголки России транспортными
             компаниями:</p>
-          <ul class="about-us-delivery-list">
+          <ul class="list-style-type about-us-delivery-list">
             <li class="about-us-delivery-item">Меловые линии</li>
             <li class="about-us-delivery-item">СДИК</li>
             <li class="about-us-delivery-item">ТоксБерри</li>
@@ -285,7 +287,7 @@
             <a class="contacts-phone" href="tel:88128121212">+7 (812) 812-12-12</a>
           </address>
           <h3 class="contacts-subtitle">Время работы</h3>
-          <ul class="contacts-schedule">
+          <ul class="reset-list contacts-schedule">
             <li class="contacts-schedule-item">пн—пт: с 10:00 до 22:00</li>
             <li class="contacts-schedule-item">сб—вс: с 10:00 до 19:00</li>
           </ul>
@@ -329,7 +331,7 @@
       <div class="footer-advantages-wrapper">
         <section class="footer-advantages">
           <h2 class="visually-hidden">Преимущества</h2>
-          <ul class="footer-advantages-list">
+          <ul  class="reset-list footer-advantages-list">
             <li class="footer-advantages-item">
               <a class="footer-advantages-link" href="#">Доставка</a>
             </li>
@@ -343,7 +345,7 @@
         </section>
         <section class="footer-social">
           <h2 class="visually-hidden">Социальные сети</h2>
-          <ul class="footer-social-list">
+          <ul class="reset-list footer-social-list">
             <li class="footer-social-item">
               <a class="social-button" href="https://www.facebook.com/htmlacademy">
                 <span class="visually-hidden">Facebook</span>
