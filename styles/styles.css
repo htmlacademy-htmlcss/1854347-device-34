@@ -2344,7 +2344,7 @@ body {
   display: block;
 }
 
-.product-card:hover .product-card-link .product-card-title {
+.product-card:hover .product-card-link {
   opacity: 0.6;
 }
 
