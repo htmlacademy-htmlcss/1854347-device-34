@@ -302,9 +302,14 @@ body {
 }
 
 /* поповер корзины */
+
+.basket-item:hover~.popover {
+  display: block;
+}
 .popover {
+  display: none;
   position: absolute;
-  top: 85px;
+  top: 90px;
   right: -17px;
   z-index: 3;
   box-sizing: border-box;
@@ -312,10 +317,6 @@ body {
   min-height: 217px;
   color: var(--color-white);
   background-color: var(--color-black);
-}
-
-.popover-close {
-  display: none;
 }
 
 .popover::before {
@@ -2343,7 +2344,7 @@ body {
   display: block;
 }
 
-.product-card:hover .product-card-link .product-card-title {
+.product-card:hover .product-card-link {
   opacity: 0.6;
 }
 
