@@ -25,7 +25,7 @@
             action="https://echo.htmlacademy.ru/"
           >
             <label class="search-label" for="search-input">
-              <span class="visually-hidden">Текст поиска</span>
+              <span class="visually-hidden">Поиск по сайту</span>
             </label>
             <div class="search-input-wrapper">
               <input
@@ -33,7 +33,7 @@
                 type="search"
                 name="search-input"
                 id="search-input"
-                placeholder="Текст поиска"
+                placeholder="Поиск по сайту"
               />
             </div>
             <button class="search-button" type="submit">Найти</button>
@@ -536,7 +536,7 @@
     <footer class="page-footer">
       <div class="footer-wrapper">
         <div class="footer-address-wrapper">
-          <a class="footer-logo-img" href="#">
+          <a class="footer-logo-link" href="#">
             <img
               class="footer-logo"
               src="images/logo-device-yellow.svg"
@@ -575,10 +575,13 @@
               <li class="footer-social-item">
                 <a
                   class="social-button"
-                  href="https://twitter.com/htmlacademy_ru"
+                  href="https://www.facebook.com/htmlacademy"
                 >
-                  <span class="visually-hidden">Twitter</span>
+                  <span class="visually-hidden">Facebook</span>
                   <svg
+                    class="social-image"
+                    aria-hidden="true"
+                    focusable="false"
                     width="40"
                     height="40"
                     viewBox="0 0 40 40"
@@ -593,7 +596,7 @@
                       fill-opacity="0.3"
                     />
                     <path
-                      d="M25.4431 14.0736L13.6231 18.6316C12.8164 18.9556 12.8211 19.4056 13.4751 19.6062L16.5097 20.5529L23.5311 16.1229C23.8631 15.9209 24.1664 16.0296 23.9171 16.2509L18.2284 21.3849H18.2271L18.2284 21.3856L18.0191 24.5136C18.3257 24.5136 18.4611 24.3729 18.6331 24.2069L20.1071 22.7736L23.1731 25.0382C23.7384 25.3496 24.1444 25.1896 24.2851 24.5149L26.2977 15.0296C26.5037 14.2036 25.9824 13.8296 25.4431 14.0736Z"
+                      d="M22.5 14H25V11H21.6C18.8 11 18 12.7 18 15.2V17H16V20H18V29H21V20H24.3L24.9 17H21V15.5C21 14.7 21.3 14 22.5 14Z"
                       fill="#444444"
                     />
                   </svg>
@@ -602,10 +605,13 @@
               <li class="footer-social-item">
                 <a
                   class="social-button"
-                  href="https://www.youtube.com/channel/UChUxTMjJGo-JDRY8pNTGL2g"
+                  href="https://www.instagram.com/htmlacademy/"
                 >
                   <span class="visually-hidden">Instagram</span>
                   <svg
+                    class="social-image"
+                    aria-hidden="true"
+                    focusable="false"
                     width="40"
                     height="40"
                     viewBox="0 0 40 40"
@@ -619,22 +625,14 @@
                       fill="white"
                       fill-opacity="0.3"
                     />
-                    <g clip-path="url(#clip0_27002_1306)">
-                      <path
-                        d="M27.6671 16.6746C27.5765 16.3515 27.4 16.0589 27.1564 15.828C26.9059 15.59 26.5989 15.4197 26.2644 15.3333C25.0124 15.0033 19.9964 15.0033 19.9964 15.0033C17.9053 14.9795 15.8147 15.0842 13.7364 15.3166C13.4019 15.4094 13.0955 15.5835 12.8444 15.8233C12.5977 16.0606 12.4191 16.3533 12.3257 16.674C12.1015 17.8818 11.9926 19.1082 12.0004 20.3366C11.9924 21.564 12.1011 22.79 12.3257 23.9993C12.4171 24.3186 12.5951 24.61 12.8424 24.8453C13.0897 25.0806 13.3977 25.2506 13.7364 25.3406C15.0051 25.67 19.9964 25.67 19.9964 25.67C22.0902 25.6938 24.1835 25.5892 26.2644 25.3566C26.5989 25.2702 26.9059 25.1 27.1564 24.862C27.3999 24.6311 27.5762 24.3385 27.6664 24.0153C27.8965 22.8079 28.0083 21.581 28.0004 20.352C28.0177 19.1177 27.906 17.885 27.6671 16.674V16.6746ZM18.4017 22.6193V18.0546L22.5751 20.3373L18.4017 22.6193Z"
-                        fill="#444444"
-                      />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_27002_1306">
-                        <rect
-                          width="16"
-                          height="11"
-                          fill="white"
-                          transform="translate(12 15)"
-                        />
-                      </clipPath>
-                    </defs>
+                    <path
+                      d="M20 22C21.1046 22 22 21.1046 22 20C22 18.8954 21.1046 18 20 18C18.8954 18 18 18.8954 18 20C18 21.1046 18.8954 22 20 22Z"
+                      fill="#444444"
+                    />
+                    <path
+                      d="M26.7 13.3C25.8 12.4 24.7 12 23.3 12H16.7C13.9 12 12 13.9 12 16.7V23.3C12 24.7 12.4 25.9 13.4 26.7C14.3 27.6 15.4 28 16.7 28H23.3C24.7 28 25.9 27.6 26.7 26.7C27.5 25.8 28 24.7 28 23.3V16.7C28 15.3 27.6 14.1 26.7 13.3ZM20 24.1C17.8 24.1 15.9 22.3 15.9 20C15.9 17.7 17.8 15.9 20 15.9C22.2 15.9 24.1 17.7 24.1 20C24.1 22.3 22.2 24.1 20 24.1ZM24.6 16.7C23.9 16.7 23.3 16.2 23.3 15.4C23.3 14.6 23.8 14.1 24.6 14.1C25.3 14.1 25.9 14.7 25.9 15.4C25.9 16.1 25.3 16.7 24.6 16.7Z"
+                      fill="#444444"
+                    />
                   </svg>
                 </a>
               </li>
