@@ -1736,6 +1736,10 @@ body {
   opacity: 0.6;
 }
 
+.modal-close-button:active {
+  opacity: 0.3;
+}
+
 .modal-close-button:focus {
   outline: 2px solid var(--color-pink);
 }
@@ -1974,8 +1978,12 @@ body {
   background-color: var(--color-light-grey);
 }
 
-.delivery-quantity-button:hover>svg>path {
-  fill-opacity: 0.6;
+.delivery-quantity-button:hover {
+  opacity: 0.6;
+}
+
+.delivery-quantity-button:active {
+  opacity: 0.3;
 }
 
 .delivery-quantity-button:focus {
