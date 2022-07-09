@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <title>Каталог</title>
+    <link
+      rel="icon"
+      href="/images/favicon.png"
+      sizes="32x32"
+      type="image/png"
+    />
     <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body>
@@ -25,7 +31,7 @@
             action="https://echo.htmlacademy.ru/"
           >
             <label class="search-label" for="search-input">
-              <span class="visually-hidden">Поиск по сайту</span>
+              <span class="visually-hidden">Текст поиска</span>
             </label>
             <div class="search-input-wrapper">
               <input
@@ -33,96 +39,31 @@
                 type="search"
                 name="search-input"
                 id="search-input"
-                placeholder="Поиск по сайту"
+                placeholder="Текст поиска"
               />
             </div>
-            <button class="search-button" type="submit">Найти</button>
+            <button class="search-button" type="button">Найти</button>
           </form>
           <ul class="reset-list navigation-user-list">
-            <li class="navigation-user-item user-item">
-              <a class="navigation-user-link" href="#">Коля Петухов</a>
+            <li class="navigation-user-item">
+              <ul class="reset-list user-menu-list">
+                <li class="user-menu-item user-item">
+                  <a class="user-menu-link" href="#">Коля Петухов</a>
+                </li>
+                <li class="user-menu-item exit-item">
+                  <a class="user-menu-link" href="index.html">Выйти</a>
+                </li>
+              </ul>
             </li>
-            <li class="navigation-user-item exit">
-              <a class="navigation-user-link" href="#">Выйти</a>
-            </li>
-            <li class="navigation-user-item compare-item">
-              <a class="navigation-user-link" href="#">Сравнить</a>
-            </li>
-            <li class="navigation-user-item basket-item">
-              <a class="navigation-user-link basket-link" href="#">Корзина</a>
-            </li>
-            <li class="popover popover-basket">
-              <!--для открытия убрать класс "popover-close"-->
-              <div class="popover-content">
-                <h2 class="visually-hidden">Корзина</h2>
-                <ul class="reset-list basket-items-list">
-                  <li class="popover-basket-item">
-                    <a class="basket-item-link" href="#">
-                      <img
-                        class="basket-item-image"
-                        src="/images/bascket/basket-1.jpg"
-                        width="39"
-                        height="43"
-                        alt="Любительская селфи-палка"
-                      />
-                      <span class="basket-item-text"
-                        >Любительская селфи-палка</span
-                      >
-                    </a>
-                    <button class="basket-item-button" type="button">
-                      <svg
-                        width="10"
-                        height="10"
-                        viewBox="0 0 10 10"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M10 0.909091L9.09091 0L5 4.09091L0.909091 0L0 0.909091L4.09091 5L0 9.09091L0.909091 10L5 5.90909L9.09091 10L10 9.09091L5.90909 5L10 0.909091Z"
-                          fill="white"
-                        />
-                      </svg>
-                      <span class="visually-hidden">Удалить из корзины</span>
-                    </button>
-                  </li>
-                  <li class="popover-basket-item">
-                    <a class="basket-item-link" href="#">
-                      <img
-                        class="basket-item-image"
-                        src="/images/bascket/basket-2.jpg"
-                        width="39"
-                        height="43"
-                        alt="Профессиональная селфи-палка"
-                      />
-                      <span class="basket-item-text"
-                        >Профессиональная селфи-палка</span
-                      >
-                    </a>
-                    <button class="basket-item-button" type="button">
-                      <svg
-                        width="10"
-                        height="10"
-                        viewBox="0 0 10 10"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M10 0.909091L9.09091 0L5 4.09091L0.909091 0L0 0.909091L4.09091 5L0 9.09091L0.909091 10L5 5.90909L9.09091 10L10 9.09091L5.90909 5L10 0.909091Z"
-                          fill="white"
-                        />
-                      </svg>
-                      <span class="visually-hidden">Удалить из корзины</span>
-                    </button>
-                  </li>
-                </ul>
-                <div class="popover-basket-results">
-                  <p class="popover-results-text popover-goods">Товаров: 2</p>
-                  <p class="popover-results-text popover-sum">Сумма: 2000 ₽</p>
-                </div>
-                <button class="basket-open-button" type="button">
-                  Открыть корзину
-                </button>
-              </div>
+            <li class="navigation-user-item exit-link">
+              <ul class="reset-list user-basket-list">
+                <li class="user-basket-item compare-link">
+                  <a class="user-basket-link" href="#">Сравнить</a>
+                </li>
+                <li class="user-basket-item">
+                  <a class="user-basket-link basket-link" href="#">Корзина</a>
+                </li>
+              </ul>
             </li>
           </ul>
         </div>
@@ -175,37 +116,6 @@
                   </li>
                 </ul>
               </li>
-              <!--Список скрывается/отображается по клику кнопки-->
-              <!-- <div class="navigation-item-wrapper">
-                <li class="navigation-catalog-item">
-                  <a href="#" class="navigation-catalog-link"
-                    >Виртуальная реальность</a
-                  >
-                </li>
-                <li class="navigation-catalog-item">
-                  <a href="catalog.html" class="navigation-catalog-link"
-                    >Моноподы для cелфи</a
-                  >
-                </li>
-                <li class="navigation-catalog-item">
-                  <a href="#" class="navigation-catalog-link">Экшн-камеры</a>
-                </li>
-              </div>
-              <div class="navigation-item-wrapper">
-                <li class="navigation-catalog-item">
-                  <a href="#" class="navigation-catalog-link"
-                    >Фитнес-браслеты</a
-                  >
-                </li>
-                <li class="navigation-catalog-item">
-                  <a href="#" class="navigation-catalog-link">Умные часы</a>
-                </li>
-              </div>
-              <div class="navigation-item-wrapper">
-                <li class="navigation-catalog-item">
-                  <a href="#" class="navigation-catalog-link">Квадрокоптеры</a>
-                </li>
-              </div> -->
             </ul>
           </div>
           <ul class="reset-list navigation-advantages-list">
@@ -255,12 +165,12 @@
                   <div class="range-scale">
                     <div class="range-bar" style="left: 0px; width: 119px">
                       <!--Стиль для изменения длины слайдера-->
-                      <button class="range-toggle toggle-min">
+                      <button class="range-toggle toggle-min" type="button">
                         <span class="visually-hidden"
                           >Изменить минимальную стоимость.</span
                         >
                       </button>
-                      <button class="range-toggle toggle-max">
+                      <button class="range-toggle toggle-max" type="button">
                         <span class="visually-hidden"
                           >Изменить максимальную стоимость.</span
                         >
@@ -271,6 +181,7 @@
                   <div class="range-wrapper-inputs">
                     <label
                       class="catalog-range-label label-min"
+                      for="min-price"
                       style="margin-left: 0px"
                     >
                       <!--Стиль для изменения положения надписи-->
@@ -279,12 +190,14 @@
                         class="range-input"
                         type="number"
                         value="0"
+                        id="min-price"
                         name="min-price"
                       />
                     </label>
                     <label
                       class="catalog-range-label label-max"
                       style="margin-right: 73px"
+                      for="max-price"
                     >
                       <!--Стиль для изменения положения надписи-->
                       до
@@ -292,6 +205,7 @@
                         class="range-input"
                         type="number"
                         value="5000"
+                        id="max-price"
                         name="max-price"
                         style="width: 37px"
                       />
@@ -304,11 +218,12 @@
                 <legend class="catalog-filter-title">Цвет</legend>
                 <ul class="reset-list catalog-filter-list">
                   <li class="catalog-filter-item">
-                    <label class="filter-control">
+                    <label class="filter-control" for="black">
                       <input
                         class="visually-hidden filter-input"
                         type="checkbox"
                         name="black"
+                        id="black"
                         checked
                       />
                       <span class="control-mark"></span>
@@ -395,7 +310,7 @@
               </fieldset>
 
               <div class="filter-button-wrapper">
-                <button class="button catalog-filter-button" type="submit">
+                <button class="button catalog-filter-button" type="button">
                   Показать
                 </button>
               </div>
@@ -497,7 +412,6 @@
                   <a class="button product-card-button" href="#">Подробнее</a>
                 </li>
               </ul>
-
               <button class="pagination-load-more" type="button">
                 Загрузить ещЁ
               </button>

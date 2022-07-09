@@ -2,6 +2,12 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      href="/images/favicon.png"
+      sizes="32x32"
+      type="image/png"
+    />
     <link rel="stylesheet" href="styles/styles.css" />
     <title>Девайс</title>
   </head>
@@ -25,7 +31,7 @@
             action="https://echo.htmlacademy.ru/"
           >
             <label class="search-label" for="search-input">
-              <span class="visually-hidden">Поиск по сайту</span>
+              <span class="visually-hidden">Текст поиска</span>
             </label>
             <div class="search-input-wrapper">
               <input
@@ -33,95 +39,103 @@
                 type="search"
                 name="search-input"
                 id="search-input"
-                placeholder="Поиск по сайту"
+                placeholder="Текст поискаы"
               />
             </div>
-            <button class="search-button" type="submit">Найти</button>
+            <button class="search-button" type="button">Найти</button>
           </form>
           <ul class="reset-list navigation-user-list">
-            <li class="navigation-user-item user-item">
-              <a class="navigation-user-link" href="/catalog.html">Войти</a>
+            <li class="navigation-user-item">
+              <ul class="reset-list user-menu-list">
+                <li class="user-menu-item user-item">
+                  <a class="user-menu-link" href="catalog.html">Войти</a>
+                </li>
+              </ul>
             </li>
-            <li class="navigation-user-item compare-item">
-              <a class="navigation-user-link" href="#">Сравнить</a>
-            </li>
-            <li class="navigation-user-item basket-item">
-              <a class="navigation-user-link basket-link" href="#">Корзина</a>
-            </li>
-            <li class="popover popover-basket">
-              <!--для открытия убрать класс "popover-close"-->
-              <div class="popover-content">
-                <h2 class="visually-hidden">Корзина</h2>
-                <ul class="reset-list basket-items-list">
-                  <li class="popover-basket-item">
-                    <a class="basket-item-link" href="#">
-                      <img
-                        class="basket-item-image"
-                        src="/images/bascket/basket-1.jpg"
-                        width="39"
-                        height="43"
-                        alt="Любительская селфи-палка"
-                      />
-                      <span class="basket-item-text"
-                        >Любительская селфи-палка</span
-                      >
-                    </a>
-                    <button class="basket-item-button" type="button">
-                      <svg
-                        width="10"
-                        height="10"
-                        viewBox="0 0 10 10"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M10 0.909091L9.09091 0L5 4.09091L0.909091 0L0 0.909091L4.09091 5L0 9.09091L0.909091 10L5 5.90909L9.09091 10L10 9.09091L5.90909 5L10 0.909091Z"
-                          fill="white"
-                        />
-                      </svg>
-                      <span class="visually-hidden">Удалить из корзины</span>
-                    </button>
-                  </li>
-                  <li class="popover-basket-item">
-                    <a class="basket-item-link" href="#">
-                      <img
-                        class="basket-item-image"
-                        src="/images/bascket/basket-2.jpg"
-                        width="39"
-                        height="43"
-                        alt="Профессиональная селфи-палка"
-                      />
-                      <span class="basket-item-text"
-                        >Профессиональная селфи-палка</span
-                      >
-                    </a>
-                    <button class="basket-item-button" type="button">
-                      <svg
-                        width="10"
-                        height="10"
-                        viewBox="0 0 10 10"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M10 0.909091L9.09091 0L5 4.09091L0.909091 0L0 0.909091L4.09091 5L0 9.09091L0.909091 10L5 5.90909L9.09091 10L10 9.09091L5.90909 5L10 0.909091Z"
-                          fill="white"
-                        />
-                      </svg>
-                      <span class="visually-hidden">Удалить из корзины</span>
-                    </button>
-                  </li>
-                </ul>
-                <div class="popover-basket-results">
-                  <p class="popover-results-text popover-goods">Товаров: 2</p>
-                  <p class="popover-results-text popover-sum">Сумма: 2000 ₽</p>
-                </div>
-                <button class="basket-open-button" type="button">
-                  Открыть корзину
-                </button>
-              </div>
+            <li class="navigation-user-item exit-link">
+              <ul class="reset-list user-basket-list">
+                <li class="user-basket-item compare-link">
+                  <a class="user-basket-link" href="#">Сравнить</a>
+                </li>
+                <li class="user-basket-item">
+                  <a class="user-basket-link basket-link" href="#">Корзина</a>
+                </li>
+              </ul>
             </li>
           </ul>
+          <div class="popover popover-basket popover-close">
+            <!--для открытия убрать класс "popover-close"-->
+            <div class="popover-content">
+              <h2 class="visually-hidden">Корзина</h2>
+              <ul class="reset-list basket-items-list">
+                <li class="popover-basket-item">
+                  <a class="basket-item-link" href="#">
+                    <img
+                      class="basket-item-image"
+                      src="/images/bascket/basket-1.jpg"
+                      width="39"
+                      height="43"
+                      alt="Любительская селфи-палка"
+                    />
+                    <span class="basket-item-text"
+                      >Любительская селфи-палка</span
+                    >
+                  </a>
+                  <button class="basket-item-button" type="button">
+                    <svg
+                      width="10"
+                      height="10"
+                      viewBox="0 0 10 10"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10 0.909091L9.09091 0L5 4.09091L0.909091 0L0 0.909091L4.09091 5L0 9.09091L0.909091 10L5 5.90909L9.09091 10L10 9.09091L5.90909 5L10 0.909091Z"
+                        fill="white"
+                      />
+                    </svg>
+                    <span class="visually-hidden">Удалить из корзины</span>
+                  </button>
+                </li>
+                <li class="popover-basket-item">
+                  <a class="basket-item-link" href="#">
+                    <img
+                      class="basket-item-image"
+                      src="/images/bascket/basket-2.jpg"
+                      width="39"
+                      height="43"
+                      alt="Профессиональная селфи-палка"
+                    />
+                    <span class="basket-item-text"
+                      >Профессиональная селфи-палка</span
+                    >
+                  </a>
+                  <button class="basket-item-button" type="button">
+                    <svg
+                      width="10"
+                      height="10"
+                      viewBox="0 0 10 10"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10 0.909091L9.09091 0L5 4.09091L0.909091 0L0 0.909091L4.09091 5L0 9.09091L0.909091 10L5 5.90909L9.09091 10L10 9.09091L5.90909 5L10 0.909091Z"
+                        fill="white"
+                      />
+                    </svg>
+                    <span class="visually-hidden">Удалить из корзины</span>
+                  </button>
+                </li>
+              </ul>
+              <div class="popover-basket-results">
+                <p class="popover-results-text popover-goods">Товаров: 2</p>
+                <p class="popover-results-text popover-sum">Сумма: 2000 ₽</p>
+              </div>
+              <button class="basket-open-button" type="button">
+                Открыть корзину
+              </button>
+            </div>
+          </div>
         </div>
         <div class="navigation-catalog-wrapper">
           <div class="navigation-catalog">
@@ -172,37 +186,6 @@
                   </li>
                 </ul>
               </li>
-              <!--Список скрывается/отображается по клику кнопки-->
-              <!-- <div class="navigation-item-wrapper">
-                <li class="navigation-catalog-item">
-                  <a href="#" class="navigation-catalog-link"
-                    >Виртуальная реальность</a
-                  >
-                </li>
-                <li class="navigation-catalog-item">
-                  <a href="catalog.html" class="navigation-catalog-link"
-                    >Моноподы для cелфи</a
-                  >
-                </li>
-                <li class="navigation-catalog-item">
-                  <a href="#" class="navigation-catalog-link">Экшн-камеры</a>
-                </li>
-              </div>
-              <div class="navigation-item-wrapper">
-                <li class="navigation-catalog-item">
-                  <a href="#" class="navigation-catalog-link"
-                    >Фитнес-браслеты</a
-                  >
-                </li>
-                <li class="navigation-catalog-item">
-                  <a href="#" class="navigation-catalog-link">Умные часы</a>
-                </li>
-              </div>
-              <div class="navigation-item-wrapper">
-                <li class="navigation-catalog-item">
-                  <a href="#" class="navigation-catalog-link">Квадрокоптеры</a>
-                </li>
-              </div> -->
             </ul>
           </div>
           <ul class="reset-list navigation-advantages-list">
@@ -487,7 +470,7 @@
               id="mailing-input"
               placeholder="Ваш e-mail"
             />
-            <button class="mailing-button" type="submit">Подписаться</button>
+            <button class="mailing-button" type="button">Подписаться</button>
           </form>
           <p class="mailing-text its-free">Это бесплатно</p>
         </div>
@@ -702,7 +685,7 @@
     <div class="modal-container modal-conteiner-close">
       <!-- Для показа модального окна убрать класс "modal-conteiner-close" -->
       <div class="modal modal-delivery">
-        <button class="modal-close-button">
+        <button class="modal-close-button" type="button">
           <span class="visually-hidden">Закрыть</span>
         </button>
         <section class="modal-content">
@@ -805,8 +788,7 @@
                 </button>
               </span>
             </p>
-
-            <button class="button delivery-form-button" type="submit">
+            <button class="button delivery-form-button" type="button">
               Отправить
             </button>
           </form>
